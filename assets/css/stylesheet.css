@@ -154,6 +154,11 @@ section {
   background-color: var(--secondary);
   padding: 1rem;
 }
+
+section section {
+  margin: 0;
+  padding: 0;
+}
 /* #endregion */
 
 /* #region FIGURE */
@@ -251,6 +256,12 @@ h1 {
   font-size: 3rem;
   text-align: center;
   text-decoration: underline;
+}
+
+body {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 
 #bus {
