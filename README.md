@@ -1,3 +1,3 @@
 # Infoboard
-# Gruppenavn: Web Vikingerne / Web Vikings
-# Gruppenavn i EASY: gWV030424
+# Gruppenavn: TechTornados
+# Gruppenavn i EASY: gTT030424
