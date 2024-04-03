@@ -1,3 +1,13 @@
+function logCurrentTime() {
+  setInterval(() => {
+    const currentTime = new Date();
+    console.log("Current time:", currentTime.toLocaleTimeString());
+  }, 1000); // Log current time every second
+}
+
+logCurrentTime();
+
+
 function displayDepartureInfo() {
   fetch(
     "https://xmlopen.rejseplanen.dk/bin/rest.exe/multiDepartureBoard?id1=851400602&id2=851973402&rttime&format=json&useBus=1"
