@@ -1,7 +1,7 @@
 const myClock = document.getElementById('clock');
 const myDate = document.getElementById('date');
 
-function getTime() {
+function getDate() {
     let currentTime = new Date();
     let hours = currentTime.getHours();
     let minutes = currentTime.getMinutes();
@@ -24,6 +24,6 @@ function getTime() {
 
 }
 // Opdaterer uret hvert sekund
-setInterval(getTime, 1000);
+setInterval(getDate, 1000);
 
-getTime();
+getDate();
