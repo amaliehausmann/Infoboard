@@ -264,6 +264,8 @@ body {
   grid-template-columns: repeat(3, 1fr);
 }
 
+ul * {list-style: none;}
+
 #bus {
 }
 
