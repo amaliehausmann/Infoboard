@@ -4,16 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Boilerplate</title>
-    <link rel="icon" type="image/x-icon" href="assets/images/favicon.svg" />
-    <link rel="stylesheet" href="assets/css/stylesheet.css" />
-    <script defer src="assets/js/script.js"></script>
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.svg" />
+    <link rel="stylesheet" href="./assets/css/stylesheet.css" />
+    <script src="./assets/js/app.js" defer></script>
+    <script src="./assets/js/weather.js" defer></script>
   </head>
   <div id="wrapper">
     <body>
       <section id="bus"><header>Bus</header></section>
       <section id="weatherAndTime">
-        <section id="weather"><header>Vejr</header></section>
-        <section id="time"><header>Tid</header></section>
+        <section id="weather"><header>Vejr</header>
+          <div class="weatherContainer">
+            <p id="temperature">Temperatur: </p>
+            <img class="weatherIcon" id="weatherIcon" src="" alt="Vejrikon">
+          </div>
+        </section>
+        <section id="time"><header>Tid</header>
+          <h1 id="clock"></h1>
+          <h2 id="date"></h2>
+        </section>
       </section>
       <section id="news"><header>Nyheder</header></section>
       <section id="schedule"><header>Skema</header></section>
