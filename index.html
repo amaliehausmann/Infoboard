@@ -4,27 +4,25 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Boilerplate</title>
-  <link rel="icon" type="image/x-icon" href="assets/images/favicon.svg" />
+  <title>Weather API</title>
   <script defer src="assets/js/app.js"></script>
+  <link rel="stylesheet" href="assets/css/stylesheet.css">
 </head>
-<div id="wrapper">
-
   <body>
     <header>
       <h1>Vejr oplysninger</h1>
     </header>
     <main>
-      <!-- Knappen til at opdatere vejroplysninger -->
-      <button onclick="getWeatherData()">Opdater vejret</button>
 
       <!-- Sted at vise vejroplysninger -->
-      <div id="weather-info">
+      <div class="weatherContainer">
         <p id="temperature">Temperatur: </p>
-        <img id="weatherIcon" src="" alt="Vejrikon">
+        <img class="weatherIcon" id="weatherIcon" src="" alt="Vejrikon">
       </div>
+
+      <h1 id="clock"></h1>
+      <h2 id="date"></h2>
 
     </main>
   </body>
-
 </html>

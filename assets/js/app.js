@@ -36,6 +36,8 @@ function receivedWeatherData(weatherData) {
     displayTemperature(temperature);
     displayWeatherIcon(weatherIcon);
 
+    console.log(weatherData);
+
     // Vis vejrobservationerne i konsollen (eller du kan ændre dette til at vise dem på din webside)
 
 }
@@ -56,6 +58,7 @@ function getDate() {
     myClock.innerText = hours + ":" + minutes + ":" + seconds;
 
     let day = currentTime.toLocaleString('default', { weekday: 'long' }); // Få ugedagen som tekst
+    day = day.charAt(0).toUpperCase() + day.slice(1); //uppercase første bogstav
     let date = currentTime.getDate();
     let month = currentTime.toLocaleString('default', { month: 'long' });
 
