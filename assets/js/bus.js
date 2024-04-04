@@ -8,7 +8,6 @@ function logCurrentTime() {
   }, 1000); // Log current time every second
 }
 
-logCurrentTime();
 
 // VIS BUSTIDER
 // Ting, som skal bruges: Busstop, Busankomststidspunkt, Busnummer, Beskeder
@@ -50,7 +49,7 @@ function displayDepartureInfo() {
 
           const departureDiv = document.createElement("div");
           departureDiv.innerHTML = `
-            <p><img src="./assets/images/bus-icon-svgrepo-com.svg" alt=""> ${line}</p>
+            <p>${line}</p>
             <p>${stop}</p>
             <p>${timeString}</p>
             ${messages !== "0" ? `<p><strong>BEMÆRK:</strong> ${messages}</p>` : ''}
