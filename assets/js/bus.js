@@ -2,7 +2,6 @@
 function logCurrentTime() {
   setInterval(() => {
     const currentTime = new Date();
-    console.log("Current time:", currentTime.toLocaleTimeString());
     // Refresh departure info after logging current time
     displayDepartureInfo();
   }, 1000); // Log current time every second
@@ -50,7 +49,7 @@ function displayDepartureInfo() {
 
           const departureDiv = document.createElement("div");
           departureDiv.innerHTML = `
-            <p><img src="./assets/images/bus-icon-svgrepo-com.svg" alt=""> ${line}</p>
+            <p> ${line}</p>
             <p>${stop}</p>
             <p>${timeString}</p>
             ${messages !== "0" ? `<p><strong>BEMÆRK:</strong> ${messages}</p>` : ''}

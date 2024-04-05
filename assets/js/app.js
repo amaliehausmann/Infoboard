@@ -18,7 +18,7 @@ function GetFoodData(callback) {
     })
 
     .catch (error => {
-        console.error('Error fetching category data:', error.message);
+        console.error('Error fetching food data:', error.message);
     })
 }
 
