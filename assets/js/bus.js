@@ -49,7 +49,6 @@ function displayDepartureInfo() {
 
           const departureDiv = document.createElement("div");
           departureDiv.innerHTML = `
-
             <p> ${line}</p>
             <p>${stop}</p>
             <p>${timeString}</p>
