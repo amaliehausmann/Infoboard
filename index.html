@@ -11,34 +11,45 @@
     <script src="./assets/js/news.js" defer></script>
     <script src="./assets/js/weather.js" defer></script>
   </head>
-  <div id="wrapper">
-    <body>
-      <section id="bus">
-        <header>Bus</header>
-        <div id="departureInfo"></div>
-      </section>
-      <section id="weatherAndTime">
-        <section id="weather">
-          <header>Vejr</header>
-          <div class="weatherContainer">
-            <p id="temperature">Temperatur:</p>
-            <img class="weatherIcon" id="weatherIcon" src="" alt="Vejrikon" />
-          </div>
+  <body>
+    <div id="wrapper">
+      <!-- SCHEDULE SECTION -->
+        <section id="schedule">
+          <header>
+            <h2>Skema</h2>
+          </header>
         </section>
-        <section id="time">
-          <header>Tid</header>
-          <h1 id="clock"></h1>
-          <h2 id="date"></h2>
+      <div id="right">
+        <!-- BUS SECTION -->
+        <section id="bus">
+          <header>
+            <h2>Bustider</h2>
+          </header>
+          <div id="departureInfo"></div>
         </section>
-      </section>
-      <section id="news">
-        <header>Nyheder</header>
-        <ul id="news-list">
-          <!-- News items will be added here dynamically -->
-        </ul>
-      </section>
-      <section id="schedule"><header>Skema</header></section>
-      <section id="food"><header>Mad</header></section>
-    </body>
-  </div>
+        <!-- WEATHER SECTION -->
+        <section id="weatherAndTime">
+          <h3 id="date"></h3>
+          <p id="clock"></p>
+          <img class="weatherIcon" id="weatherIcon" src="" alt="Vejrikon" />
+          <p id="description"></p>
+          <p id="temperature"></p>
+        </section>
+        <!-- NEWS SECTION -->
+        <section id="news">
+          <header>
+            <h2>Nyheder</h2>
+          </header>
+          <ul id="news-list">
+          </ul>
+        </section>
+        <!-- FOOD SECTION -->
+        <section id="food">
+          <header>
+            <h2>Ugens menu</h2>
+          </header>
+        </section>
+      </div>
+    </div>
+  </body>
 </html>

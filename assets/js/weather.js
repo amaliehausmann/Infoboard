@@ -28,9 +28,10 @@ function receivedWeatherData(weatherData) {
     // Udtræk relevante oplysninger fra API svaret
     let temperature = weatherData.main.temp;
     let weatherIcon = weatherData.weather[0].icon;
+    let weatherDescription = weatherData.weather[0].description;
 
 
-    displayTemperature(temperature);
+    displayTemperature(temperature, weatherDescription);
     displayWeatherIcon(weatherIcon);
 
     console.log(weatherData);
@@ -43,31 +44,59 @@ function getDate() {
     let currentTime = new Date();
     let hours = currentTime.getHours();
     let minutes = currentTime.getMinutes();
-    let seconds = currentTime.getSeconds();
 
     if (minutes < 10) {
         minutes = "0" + minutes;
     }
-    if (seconds < 10) {
-        seconds = "0" + seconds;
-    }
 
-    myClock.innerText = hours + ":" + minutes + ":" + seconds;
+    myClock.innerText = hours + ":" + minutes;
 
-    let day = currentTime.toLocaleString('default', { weekday: 'long' }); // Få ugedagen som tekst
+    let day = currentTime.toLocaleString('da-DK', { weekday: 'long' }); // Få ugedagen som tekst på dansk
     day = day.charAt(0).toUpperCase() + day.slice(1); //uppercase første bogstav
     let date = currentTime.getDate();
-    let month = currentTime.toLocaleString('default', { month: 'long' });
+    let month = currentTime.toLocaleString('da-DK', { month: 'long' }); // Få måneden som tekst på dansk
 
-    myDate.innerText = day + " | " + date + ". " + month;
+    myDate.innerText = day + " " + date + ". " + month;
 
+}
+
+function translateWeatherDescription(description) {
+    switch (description) {
+        case 'clear':
+            return 'Klar himmel';
+        case 'few clouds':
+            return 'Enkelte skyer';
+        case 'scattered clouds':
+            return 'Spredte skyer';
+        case 'overcast clouds':
+            return 'Overskyet';
+        case 'shower rain':
+            return 'Byger';
+        case 'rain':
+            return 'Regn';
+        case 'thunderstorm':
+            return 'Tordenvejr';
+        case 'snow':
+            return 'Sne';
+        case 'mist':
+            return 'Tåge';
+        default:
+            return description;
+    }
 }
 
 /*VIEW CODE--------------------------------------------------------------------------------------------*/
 
-function displayTemperature(temperature) {
+function displayTemperature(temperature, description) {
     const temperatureElement = document.getElementById('temperature');
+    const descriptionElement = document.getElementById('description');
+
     temperatureElement.textContent = `Temperatur: ${temperature} °C`;
+    
+    
+    // Oversætning af vejrbeskrivelse til dansk
+    const translatedDescription = translateWeatherDescription(description);
+    descriptionElement.textContent = `${translatedDescription}`;
 }
 
 function displayWeatherIcon(weatherIcon) {

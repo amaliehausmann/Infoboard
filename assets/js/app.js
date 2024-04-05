@@ -199,12 +199,12 @@ function createScheduleView(myTeam, myClass, myClassTime, myEducation) {
 //         const TeamTextNode = document.createTextNode(myTeam[i]);
 //         const ClassTextNode = document.createTextNode(myClass[i]);
 //         const SubjectTextNode = document.createTextNode(myEducation[i]);
-        
+
 //         ClassTime.appendChild(TimeTextNode);
 //         Team.appendChild(TeamTextNode);
 //         Class.appendChild(ClassTextNode);
 //         Subject.appendChild(SubjectTextNode);
-        
+
 //         ScheduleSection.appendChild(ClassTime);
 //         ScheduleSection.appendChild(Team);
 //         ScheduleSection.appendChild(Class);
