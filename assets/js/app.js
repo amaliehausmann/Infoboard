@@ -36,15 +36,19 @@ function createFoodView(myDays, myDish) {
         foodDay.className = 'foodDay';
         const foodDish = document.createElement('p');
         foodDish.className = 'foodDish';
-        
+        const foodBox = document.createElement('section');
+        foodBox.className = 'foodBox';
+
         const dayTextNode = document.createTextNode(myDays[i]);
         const dishTextNode = document.createTextNode(myDish[i]);
         
         foodDay.appendChild(dayTextNode);
         foodDish.appendChild(dishTextNode);
         
-        foodSection.appendChild(foodDay);
-        foodSection.appendChild(foodDish);
+
+        foodBox.appendChild(foodDay);
+        foodBox.appendChild(foodDish);
+        foodSection.appendChild(foodBox);
     }
 }
 

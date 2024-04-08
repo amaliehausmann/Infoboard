@@ -4,29 +4,30 @@ document.addEventListener("DOMContentLoaded", function () {
   )
     .then((response) => response.json())
     .then((data) => {
-      const newsItems = data.items;
-      const newsList = document.getElementById("news-list");
+      const newsItems = data.items.slice(0, 4); // Only the first 4 news items
+      const NewsSection = document.getElementById('news');
 
       // Clear previous content
-      newsList.innerHTML = "";
+      NewsSection.innerHTML = "";
 
-      // Iterate through each news item and append to the list
+      // Iterate through each news item and append to the section
       newsItems.forEach((item) => {
-        const listItem = document.createElement("li");
-        const title = document.createElement("h2");
-        const link = document.createElement("a");
+        const title = document.createElement("p");
+        title.className = 'newsTitle';
         const pubDate = document.createElement("p");
+        pubDate.className = 'pubDate';
+        const newsBox = document.createElement('section');
+        newsBox.className = 'newsBox';
 
         title.textContent = item.title;
-        link.textContent = "Read more";
-        link.href = item.link;
-        pubDate.textContent = new Date(item.pubDate).toLocaleString();
+        pubDate.textContent = new Date(item.pubDate).toLocaleString('da-DK', {
+          hour: '2-digit',
+          minute: '2-digit'
+        });
 
-        listItem.appendChild(title);
-        listItem.appendChild(link);
-        listItem.appendChild(pubDate);
-
-        newsList.appendChild(listItem);
+        newsBox.appendChild(pubDate);
+        newsBox.appendChild(title);
+        NewsSection.appendChild(newsBox);
       });
     })
     .catch((error) => console.error("Error fetching news:", error));

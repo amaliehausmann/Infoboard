@@ -74,6 +74,8 @@ function translateWeatherDescription(description) {
             return 'Byger';
         case 'rain':
             return 'Regn';
+        case 'broken clouds':
+            return 'Delvist skyet';
         case 'thunderstorm':
             return 'Tordenvejr';
         case 'snow':
