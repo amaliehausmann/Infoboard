@@ -1,23 +1,22 @@
 UNIVERSAL
 :root {
   /* COLORS */
-  --primary: #e3e3e3;
-  --secondary: #cecece;
-  --accent: #3e3e3e;
-  --indent: #00000010;
-  --scroll-bar-track: #00000010;
-  --scroll-bar-thumb: #00000030;
-  --scroll-bar-thumb-hover: #0000009a;
-  --active: #0099ff;
+  --primary: #fff;
+  --background: #202044;
 
-  --orange: #f4690c;
-  --lorange: #f7c894;
-  --green: #146d57;
-  --lgreen: #97beac;
-  --yellow: #f0a901;
-  --lyellow: #f5c961;
-  --purple: #7c82d6;
-  --lpurple: #b5b5ff;
+  --brown1: #C04B10;
+  --brown2: #A6410E;
+  --brown3: #8F3C13;
+  --blue1: #0077B6;
+  --blue2: #023E8A;
+  --blue3: #08346C;
+  --green1: #248277;
+  --green2: #14746F;
+  --green3: #036666;
+  --yellow1: #FF9500;
+  --yellow2: #FF8800;
+  --yellow3: #FF7B00;
+
 
   /* ATTRIBUTES */
   --rounded: 1rem;
@@ -38,7 +37,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0;
-  color: --;
+  color: white;
 }
 
 #wrapper {
@@ -49,20 +48,280 @@ body {
   gap: 1rem;
 }
 
+/* Schedule */
+
 #left {
-  background-color: #202044;
-  width: 100%;
+  background-color: #202044; /*var(--background)*/
+  display: inline-flex;
 }
+
+#left header{
+  font-size: 30px;
+  margin-bottom: -55px;
+}
+
+#schedule {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-left: 60px;
+}
+
+.ClassBox{
+  display: flex;
+  margin-bottom: -20px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.ClassBox:nth-child(1n+1) .ClassTime:nth-child(1n+1){
+  background-color: #08346C;
+}
+.ClassBox:nth-child(2n+1) .ClassTime:nth-child(2n+1){
+  background-color: #08346C;
+}
+.ClassBox:nth-child(2n+1) .ClassTime:nth-child(2n+1){
+  background-color: #08346C;
+}
+.ClassBox:nth-child(3n+1) .ClassTime:nth-child(3n+1){
+  background-color: #036666;
+}
+.ClassBox:nth-child(4n+1) .ClassTime:nth-child(4n+1){
+  background-color: #036666;
+}
+.ClassBox:nth-child(5n+1) .ClassTime:nth-child(5n+1){
+  background-color: #8F3C13;
+}
+.ClassBox:nth-child(6n+1) .ClassTime:nth-child(6n+1){
+  background-color: #8F3C13;
+}
+.ClassBox:nth-child(7n+1) .ClassTime:nth-child(7n+1){
+  background-color: #ff7003;
+}
+.ClassBox:nth-child(8n+1) .ClassTime:nth-child(8n+1){
+  background-color: #ff7003;
+}
+.ClassBox:nth-child(1n+1) .Team:nth-child(1n+2){
+  background-color: #023E8A;
+}
+.ClassBox:nth-child(2n+1) .Team:nth-child(2n+2){
+  background-color: #023E8A;
+}
+.ClassBox:nth-child(3n+1) .Team:nth-child(3n+2){
+  background-color: #14746F;
+}
+.ClassBox:nth-child(4n+1) .Team:nth-child(4n+2){
+  background-color: #14746F;
+}
+.ClassBox:nth-child(5n+1) .Team:nth-child(5n+2){
+  background-color: #A6410E;
+}
+.ClassBox:nth-child(6n+1) .Team:nth-child(6n+2){
+  background-color: #A6410E;
+}
+.ClassBox:nth-child(7n+1) .Team:nth-child(7n+2){
+  background-color: #FF7B00;
+}
+.ClassBox:nth-child(8n+1) .Team:nth-child(8n+2){
+  background-color: #FF7B00;
+}
+.ClassBox:nth-child(1n+1) .Subject:nth-child(1n+3){
+  background-color: #023E8A;
+}
+.ClassBox:nth-child(2n+1) .Subject:nth-child(2n+3){
+  background-color: #023E8A;
+}
+.ClassBox:nth-child(3n+1) .Subject:nth-child(3n+3){
+  background-color: #14746F;
+}
+.ClassBox:nth-child(4n+1) .Subject:nth-child(4n+3){
+  background-color: #14746F;
+}
+.ClassBox:nth-child(5n+1) .Subject:nth-child(5n+3){
+  background-color: #A6410E;
+}
+.ClassBox:nth-child(6n+1) .Subject:nth-child(6n+3){
+  background-color: #A6410E;
+}
+.ClassBox:nth-child(7n+1) .Subject:nth-child(7n+3){
+  background-color: #FF7B00;
+}
+.ClassBox:nth-child(8n+1) .Subject:nth-child(8n+3){
+  background-color: #FF7B00;
+}
+.ClassBox:nth-child(1n+1) .Class:nth-child(1n+4){
+  background-color: #0077B6;
+}
+.ClassBox:nth-child(2n+1) .Class:nth-child(2n+4){
+  background-color: #0077B6;
+}
+.ClassBox:nth-child(3n+1) .Class:nth-child(3n+4){
+  background-color: #248277;
+}
+.ClassBox:nth-child(4n+1) .Class:nth-child(4n+4){
+  background-color: #248277;
+}
+.ClassBox:nth-child(5n+1) .Class:nth-child(5n+4){
+  background-color: #C04B10;
+}
+.ClassBox:nth-child(6n+1) .Class:nth-child(6n+4){
+  background-color: #C04B10;
+}
+.ClassBox:nth-child(7n+1) .Class:nth-child(7n+4){
+  background-color: #FF9500;
+}
+.ClassBox:nth-child(8n+1) .Class:nth-child(8n+4){
+  background-color: #FF9500;
+}
+.ClassBox:nth-child(9n+1) .ClassTime:nth-child(9n+1){
+  background-color: #08346C;
+}
+.ClassBox:nth-child(10n+1) .ClassTime:nth-child(10n+1){
+  background-color: #08346C;
+}
+.ClassBox:nth-child(11n+1) .ClassTime:nth-child(11n+1){
+  background-color: #036666;
+}
+.ClassBox:nth-child(12n+1) .ClassTime:nth-child(12n+1){
+  background-color: #036666;
+}
+.ClassBox:nth-child(13n+1) .ClassTime:nth-child(13n+1){
+  background-color: #8F3C13;
+}
+.ClassBox:nth-child(14n+1) .ClassTime:nth-child(14n+1){
+  background-color: #8F3C13;
+}
+.ClassBox:nth-child(15n+1) .ClassTime:nth-child(15n+1){
+  background-color: #ff7003;
+}
+.ClassBox:nth-child(16n+1) .ClassTime:nth-child(16n+1){
+  background-color: #ff7003;
+}
+.ClassBox:nth-child(9n+1) .Team:nth-child(9n+2){
+  background-color: #023E8A;
+}
+.ClassBox:nth-child(10n+1) .Team:nth-child(10n+2){
+  background-color: #023E8A;
+}
+.ClassBox:nth-child(11n+1) .Team:nth-child(11n+2){
+  background-color: #14746F;
+}
+.ClassBox:nth-child(12n+1) .Team:nth-child(12n+2){
+  background-color: #14746F;
+}
+.ClassBox:nth-child(13n+1) .Team:nth-child(13n+2){
+  background-color: #A6410E;
+}
+.ClassBox:nth-child(14n+1) .Team:nth-child(14n+2){
+  background-color: #A6410E;
+}
+.ClassBox:nth-child(15n+1) .Team:nth-child(15n+2){
+  background-color: #FF7B00;
+}
+.ClassBox:nth-child(16n+1) .Team:nth-child(16n+2){
+  background-color: #FF7B00;
+}
+.ClassBox:nth-child(9n+1) .Subject:nth-child(9n+3){
+  background-color: #023E8A;
+}
+.ClassBox:nth-child(10n+1) .Subject:nth-child(10n+3){
+  background-color: #023E8A;
+}
+.ClassBox:nth-child(11n+1) .Subject:nth-child(11n+3){
+  background-color: #14746F;
+}
+.ClassBox:nth-child(12n+1) .Subject:nth-child(12n+3){
+  background-color: #14746F;
+}
+.ClassBox:nth-child(13n+1) .Subject:nth-child(13n+3){
+  background-color: #A6410E;
+}
+.ClassBox:nth-child(14n+1) .Subject:nth-child(14n+3){
+  background-color: #A6410E;
+}
+.ClassBox:nth-child(15n+1) .Subject:nth-child(15n+3){
+  background-color: #FF7B00;
+}
+.ClassBox:nth-child(16n+1) .Subject:nth-child(16n+3){
+  background-color: #FF7B00;
+}
+.ClassBox:nth-child(9n+1) .Class:nth-child(9n+4){
+  background-color: #0077B6;
+}
+.ClassBox:nth-child(10n+1) .Class:nth-child(10n+4){
+  background-color: #0077B6;
+}
+.ClassBox:nth-child(11n+1) .Class:nth-child(11n+4){
+  background-color: #248277;
+}
+.ClassBox:nth-child(12n+1) .Class:nth-child(12n+4){
+  background-color: #248277;
+}
+.ClassBox:nth-child(13n+1) .Class:nth-child(13n+4){
+  background-color: #C04B10;
+}
+.ClassBox:nth-child(14n+1) .Class:nth-child(14n+4){
+  background-color: #C04B10;
+}
+.ClassBox:nth-child(15n+1) .Class:nth-child(15n+4){
+  background-color: #FF9500;
+}
+.ClassBox:nth-child(16n+1) .Class:nth-child(16n+4){
+  background-color: #FF9500;
+}
+
+
+.ClassTime{
+  border-radius: 999px;
+  padding: 0 14px;
+  position: absolute;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.Team{
+  border-radius: 999px;
+  padding-right: 45px;
+  margin-right: -14px;
+  padding-left: 30px;
+  margin-left: 40px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.Subject{
+  border-radius: 999px;
+  padding-left: 30px;
+  margin-left: -15px;
+  padding-right: 30px;
+  z-index: 10;
+  position: relative;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  min-width: 140px;
+}
+
+.Class{
+  padding: 0 30px;
+  border-radius: 999px;
+  position: absolute;
+  z-index: 8;
+  margin-left: 335px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  min-width: 75px;
+  padding-left: 50px;
+}
+
+
 
 #right {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
+  gap: 2.5rem;
 }
 
 #right > * {
   background-color: #0d0c3362;
-  border-radius: 10px;
+  border-radius: 30px;
 }
 
 #bus {
@@ -86,13 +345,13 @@ body {
 }
 
 #date {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 #clock {
-  margin-top: -1.7rem;
+  margin-top: -1.5rem;
   font-weight: 500;
-  font-size: 4rem;
+  font-size: 3.5rem;
 }
 
 .weatherIcon {
@@ -103,10 +362,17 @@ body {
 
 #description {
   margin-bottom: -0.5rem;
-  font-weight: 600;
+  font-weight: 400;
+  font-size: 1.2rem;
 }
 
 #news {
+  overflow: hidden;
+  
+}
+
+#news-list{
+  max-height: 350px
 }
 
 #schedule {
