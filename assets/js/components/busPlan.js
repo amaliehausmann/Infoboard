@@ -12,12 +12,12 @@ export const busPlan = async () => {
   const apiData = await myFetch(endpoint);
   const slicedData = apiData.MultiDepartureBoard?.Departure.slice(0, 5);
 
-  const ul = document.createElement("ul");
-  const liLine = document.createElement("li");
+  const ul = document.createElement("section");
+  const liLine = document.createElement("p");
   liLine.innerText = "Linje";
-  const liStop = document.createElement("li");
+  const liStop = document.createElement("p");
   liStop.innerText = "Stop";
-  const liTime = document.createElement("li");
+  const liTime = document.createElement("p");
   liTime.innerText = "Tid";
 
   ul.append(liLine, liStop, liTime);
@@ -28,16 +28,16 @@ export const busPlan = async () => {
    */
   if (slicedData) {
     slicedData.map((value, index) => {
-      const ul = document.createElement("ul");
+      const ul = document.createElement("section");
       ul.classList.add("busPlan");
 
-      const liLine = document.createElement("li");
+      const liLine = document.createElement("p");
       liLine.innerText = value.line;
 
-      const liStop = document.createElement("li");
+      const liStop = document.createElement("p");
       liStop.innerText = value.stop;
 
-      const liTime = document.createElement("li");
+      const liTime = document.createElement("p");
       liTime.innerText = calcRemainingTime(`${value.date} ${value.time}`);
 
       ul.append(liLine, liStop, liTime);

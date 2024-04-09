@@ -479,6 +479,7 @@ body {
 /* BUS SECTION */
 
 #bus {
+  display: flex;
   overflow: hidden;
   max-height: 400px;
 }
