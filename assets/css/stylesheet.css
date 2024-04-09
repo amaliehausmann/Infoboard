@@ -31,6 +31,18 @@ UNIVERSAL
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+@keyframes floatAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 body {
   background-image: url("/./assets/images/photos/tech.png");
   background-position: center;
@@ -329,10 +341,6 @@ body {
   gap: 43px 100px;
 }
 
-#right .newsContainer{
-
-  
-}
 
 /* NEWS SECTION */
 
@@ -421,6 +429,7 @@ body {
 #weatherAndTime img{
   margin: -60px;
   margin-right: 0;
+  animation: floatAnimation 3s ease-in-out infinite;
 }
 
 #description {
