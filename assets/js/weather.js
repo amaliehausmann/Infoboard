@@ -85,6 +85,8 @@ function translateWeatherDescription(description) {
             return 'Sne';
         case 'mist':
             return 'Tåge';
+        case 'moderate rain':
+            return 'Moderat regn';
         default:
             return description;
     }
