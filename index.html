@@ -7,7 +7,7 @@
     <link rel="icon" type="image/x-icon" href="./assets/images/favicon.svg" />
     <link rel="stylesheet" href="./assets/css/stylesheet.css" />
     <script src="./assets/js/app.js" defer></script>
-    <script src="./assets/js/bus.js" defer></script>
+    <script defer src="./assets/js/utils/bundles.js" type="module"></script>
     <script src="./assets/js/news.js" defer></script>
     <script src="./assets/js/weather.js" defer></script>
     <script src="./assets/js/ny.js" defer></script>
@@ -28,10 +28,10 @@
           <header class="newsHeader">
             <h2>Nyheder</h2>
           </header>
-        <section id="news">
-          <ul id="news-list"></ul>
-        </section>   
-       </section>
+          <section id="news">
+            <ul id="news-list"></ul>
+          </section>
+        </section>
         <!-- WEATHER SECTION -->
         <section id="weatherAndTime">
           <h3 id="date"></h3>
@@ -48,10 +48,6 @@
         </section>
         <!-- BUS SECTION -->
         <section id="bus">
-          <header>
-            <h2>Bustider</h2>
-          </header>
-          <div id="departureInfo"></div>
         </section>
       </div>
     </div>
