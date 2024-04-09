@@ -44,12 +44,14 @@ function getDate() {
     let currentTime = new Date();
     let hours = currentTime.getHours();
     let minutes = currentTime.getMinutes();
+    let colon = ":";
+    
 
     if (minutes < 10) {
         minutes = "0" + minutes;
     }
 
-    myClock.innerText = hours + ":" + minutes;
+    myClock.innerText = hours + colon + minutes;
 
     let day = currentTime.toLocaleString('da-DK', { weekday: 'long' }); // Få ugedagen som tekst på dansk
     day = day.charAt(0).toUpperCase() + day.slice(1); //uppercase første bogstav
@@ -58,6 +60,7 @@ function getDate() {
 
     myDate.innerText = day + " " + date + ". " + month;
 
+   
 }
 
 function translateWeatherDescription(description) {
@@ -72,8 +75,8 @@ function translateWeatherDescription(description) {
             return 'Overskyet';
         case 'shower rain':
             return 'Byger';
-        case 'rain':
-            return 'Regn';
+        case 'light rain':
+            return 'Let regn';
         case 'broken clouds':
             return 'Delvist skyet';
         case 'thunderstorm':

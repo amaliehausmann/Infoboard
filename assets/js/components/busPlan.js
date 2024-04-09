@@ -30,14 +30,18 @@ export const busPlan = async () => {
     slicedData.map((value, index) => {
       const ul = document.createElement("section");
       ul.classList.add("busPlan");
+      ul.className = 'busPlan';
 
       const liLine = document.createElement("p");
       liLine.innerText = value.line;
+      liLine.className = 'line';
 
       const liStop = document.createElement("p");
       liStop.innerText = value.stop;
+      liStop.className = 'stop';
 
       const liTime = document.createElement("p");
+      liTime.className = 'timestamp';
       liTime.innerText = calcRemainingTime(`${value.date} ${value.time}`);
 
       ul.append(liLine, liStop, liTime);
@@ -45,12 +49,11 @@ export const busPlan = async () => {
       container.append(ul);
     });
   }
-  setTimeout(busPlan, 3600);
+  setTimeout(busPlan, 30000);
 };
 
 const calcRemainingTime = (departureTime) => {
   const currentTimeStamp = new Date().getTime();
-  //   console.log(currentTimeStamp);
 
   const arrayDepartureTime = departureTime.split(/[.: ]/);
 
@@ -67,8 +70,6 @@ const calcRemainingTime = (departureTime) => {
     departureHours,
     departureMinutes
   ).getTime();
-
-  console.log(new Date(departureTimeStamp));
 
   const differenceSeconds = Math.abs(
     Math.floor((departureTimeStamp - currentTimeStamp) / 1000)

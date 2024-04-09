@@ -1,55 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Boilerplate</title>
-    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.svg" />
-    <link rel="stylesheet" href="./assets/css/stylesheet.css" />
-    <script src="./assets/js/app.js" defer></script>
-    <script defer src="./assets/js/utils/bundles.js" type="module"></script>
-    <script src="./assets/js/news.js" defer></script>
-    <script src="./assets/js/weather.js" defer></script>
-    <script src="./assets/js/ny.js" defer></script>
-  </head>
-  <body>
-    <div id="wrapper">
-      <div id="left">
-        <!-- SCHEDULE SECTION -->
-        <section id="schedule">
-          <header>
-            <h2>Skema</h2>
-          </header>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Infoboard</title>
+  <link rel="icon" type="image/x-icon" href="./assets/images/tornado.png" />
+  <link rel="stylesheet" href="./assets/css/stylesheet.css" />
+  <script src="./assets/js/app.js" defer></script>
+  <script defer src="./assets/js/utils/bundles.js" type="module"></script>
+  <script src="./assets/js/news.js" defer></script>
+  <script src="./assets/js/weather.js" defer></script>
+  <script src="./assets/js/ny.js" defer></script>
+</head>
+
+<body>
+  <div id="wrapper">
+    <div id="left">
+      <!-- SCHEDULE SECTION -->
+      <section id="schedule">
+        <header>
+          <h2>Skema</h2>
+        </header>
+      </section>
+    </div>
+    <div id="right">
+      <!-- NEWS SECTION -->
+      <section class="newsContainer">
+        <header class="newsHeader">
+          <h2>Nyheder</h2>
+        </header>
+        <section id="news">
+          <ul id="news-list"></ul>
         </section>
-      </div>
-      <div id="right">
-        <!-- NEWS SECTION -->
-        <section class="newsContainer">
-          <header class="newsHeader">
-            <h2>Nyheder</h2>
-          </header>
-          <section id="news">
-            <ul id="news-list"></ul>
-          </section>
-        </section>
-        <!-- WEATHER SECTION -->
-        <section id="weatherAndTime">
-          <h3 id="date"></h3>
-          <p id="clock" class="blink"></p>
-          <img class="weatherIcon" id="weatherIcon" src="" alt="Vejrikon" />
-          <p id="description"></p>
-          <p id="temperature"></p>
-        </section>
-        <!-- FOOD SECTION -->
-        <section id="food">
-          <header>
-            <h2>Ugens menu</h2>
-          </header>
-        </section>
-        <!-- BUS SECTION -->
+      </section>
+      <!-- WEATHER SECTION -->
+      <section id="weatherAndTime">
+        <h3 id="date"></h3>
+        <p id="clock"></p>
+        <img class="weatherIcon" id="weatherIcon" src="" alt="Vejrikon" />
+        <p id="description"></p>
+        <p id="temperature"></p>
+      </section>
+      <!-- FOOD SECTION -->
+      <section id="food">
+        <header>
+          <h2>Ugens menu</h2>
+        </header>
+      </section>
+      <!-- BUS SECTION -->
+      <section class="busContainer">
+        <header>
+          <h2>Bustider</h2>
+        </header>
         <section id="bus">
         </section>
-      </div>
+      </section>
+
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
