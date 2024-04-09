@@ -277,8 +277,8 @@ body {
   border-radius: 999px;
   padding: 0 14px;
   position: absolute;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 7.5px;
+  padding-bottom: 7.5px;
 }
 
 .Team{
@@ -286,8 +286,8 @@ body {
   margin-right: -14px;
   padding-left: 40px;
   margin-left: 40px;
-  padding-bottom: 5px;
-  padding-top: 5px;
+  padding-bottom: 7.5px;
+  padding-top: 7.5px;
   width: 150px;
 }
 
@@ -296,10 +296,10 @@ body {
   margin-left: -15px;
 
   z-index: 10;
-  width: 200px;
+  width: 210px;
   position: relative;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 7.5px;
+  padding-bottom: 7.5px;
   text-align: left;
 }
 
@@ -309,10 +309,11 @@ body {
   position: absolute;
   z-index: 8;
   margin-left: 375px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 7.5px;
+  padding-bottom: 7.5px;
   width: 75px;
   padding-left: 40px;
+  text-align: center;
 }
 
 
@@ -390,7 +391,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  margin
 }
 
 #weatherAndTime * {
@@ -398,15 +399,16 @@ body {
   background-color: #00000000;
   padding: 0;
   font-weight: 300;
+  margin-right: 50px;
 }
 
 #date {
-  margin-top: -80px;
+  margin-top: -40px;
   font-size: 30px;
 }
 
 #clock {
-  margin-top: -1.5rem;
+  margin-top: -15px;
   font-weight: 500;
   font-size: 80px;
   margin-bottom: 50px;
@@ -418,6 +420,7 @@ body {
 
 #weatherAndTime img{
   margin: -60px;
+  margin-right: 0;
 }
 
 #description {
