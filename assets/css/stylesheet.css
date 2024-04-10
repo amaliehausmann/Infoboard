@@ -572,12 +572,11 @@ body {
   border-radius: 999px;
   position: absolute;
   z-index: 5;
-  width: 10px;
   padding-top: 12px;
   padding-bottom: 12px;
   padding-left: 40px;
   padding-right: 10px;
-  width: 60px;
+  width: 110px;
   text-align: right;
   right: 45px;
 }
