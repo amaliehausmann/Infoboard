@@ -70,7 +70,7 @@ function translateWeatherDescription(description) {
     case "light rain":
       return "Let regn";
     case "light intensity drizzle":
-      return "Støvregn";
+      return "Let støvregn";
     case "broken clouds":
       return "Delvist skyet";
     case "thunderstorm":
