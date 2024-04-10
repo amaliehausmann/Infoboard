@@ -562,7 +562,7 @@ body {
   border-radius: 999px;
   position: relative;
   z-index: 8;
-  width: 370px;
+  /* width: 370px; */
   padding: 12px 0 12px 60px;
   padding-right: 45px;
 
@@ -576,7 +576,8 @@ body {
   padding-bottom: 12px;
   padding-left: 40px;
   padding-right: 10px;
-  width: 110px;
+  width: 10vw;
+  /* width: 110px; */
   text-align: right;
   right: 45px;
 }
