@@ -367,7 +367,8 @@ body {
   position: absolute;
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: #FF5151;
+  /* background-color: #FF5151; */
+  background-color: #b51e1e;
   min-width: 60px;
   text-align: center;
   line-height: 2.8rem;
@@ -384,7 +385,7 @@ body {
   padding-bottom: 10px;
   background-color: #dc1e1e;
   height: 2.8rem;
-  width: 430px;
+  width: 439px;
 }
 
 
@@ -469,7 +470,7 @@ body {
   position: absolute;
   padding-top: 12px;
   padding-bottom: 12px;
-  background-color: #0077B6;
+  background-color: #08346c;
   min-width: 65px;
   text-transform: capitalize;
   text-align: center;

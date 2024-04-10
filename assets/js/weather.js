@@ -34,7 +34,7 @@ function receivedWeatherData(weatherData) {
     displayTemperature(temperature, weatherDescription);
     displayWeatherIcon(weatherIcon);
 
-    console.log(weatherData);
+    // console.log(weatherData);
 
     // Vis vejrobservationerne i konsollen (eller du kan ændre dette til at vise dem på din webside)
 
