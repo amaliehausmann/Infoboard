@@ -23,7 +23,7 @@ function getWeatherData() {
 
 function receivedWeatherData(weatherData) {
   // Udtræk relevante oplysninger fra API svaret
-  let temperature = weatherData.main.temp;
+  let temperature = Math.round(weatherData.main.temp);
   let weatherIcon = weatherData.weather[0].icon;
   let weatherDescription = weatherData.weather[0].description;
 
@@ -92,7 +92,7 @@ function displayTemperature(temperature, description) {
   const temperatureElement = document.getElementById("temperature");
   const descriptionElement = document.getElementById("description");
 
-  temperatureElement.textContent = `Temperatur: ${temperature} °C`;
+  temperatureElement.textContent = `${temperature} °C`;
 
   // Oversætning af vejrbeskrivelse til dansk
   const translatedDescription = translateWeatherDescription(description);
