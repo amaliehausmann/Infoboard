@@ -45,7 +45,7 @@ body {
   /* background-image: url("/./assets/images/photos/tech.png"); */
   background: 
   /* linear-gradient(rgba(0, 0, 65, 0.5), rgba(150, 0, 0, 0.7)),  */
-    url("https://static-resources.mirai.com/wp-content/uploads/sites/1738/20230810075239/Gran-Canaria-Naturaleza.jpg");
+    url("https://images.unsplash.com/photo-1641314672222-e7d9840bf386?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -60,7 +60,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 2fr;
   flex-direction: row;
-  background-color: #050015e1;
+  background-color: #090a29b3;
 }
 
 /* Schedule */
