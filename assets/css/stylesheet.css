@@ -60,7 +60,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 2fr;
   flex-direction: row;
-  background-color: #00000050;
+  background-color: #050015e1;
 }
 
 /* Schedule */
@@ -70,7 +70,7 @@ body {
   display: inline-flex;
   height: 100vh;
   margin-right: 0;
-  filter: drop-shadow(12px 3px 5px #0000006b);
+  filter: drop-shadow(12px 3px 5px #00000050);
 }
 
 #left header {
