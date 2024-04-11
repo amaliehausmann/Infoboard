@@ -191,10 +191,10 @@ body {
 }
 
 .ClassBox:nth-child(1n + 1) .Class:nth-child(1n + 5) {
-  background-color: #0077b6;
+  background-color: #2066c9;
 }
 .ClassBox:nth-child(2n + 1) .Class:nth-child(2n + 5) {
-  background-color: #0077b6;
+  background-color: #2066c9;
 }
 .ClassBox:nth-child(3n + 1) .Class:nth-child(3n + 5) {
   background-color: #248277;
@@ -311,10 +311,10 @@ body {
   background-color: #ff7b00;
 }
 .ClassBox:nth-child(9n + 1) .Class:nth-child(9n + 5) {
-  background-color: #0077b6;
+  background-color: #2066c9;
 }
 .ClassBox:nth-child(10n + 1) .Class:nth-child(10n + 5) {
-  background-color: #0077b6;
+  background-color: #2066c9;
 }
 .ClassBox:nth-child(11n + 1) .Class:nth-child(11n + 5) {
   background-color: #248277;
@@ -468,7 +468,7 @@ body {
 
 #clock {
   margin: 0;
-  margin-top: -2vh;
+  margin-top: -1vh;
   font-weight: 500;
   font-size: 80px;
   margin-bottom: 60px;
