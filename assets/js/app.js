@@ -78,14 +78,15 @@ function GetScheduleData(callback) {
 
 function RecieveScheduleData(data) {
     let myTeam = data.value.map(info => info.Team);
+    let myClassType = data.value.map (info => info.Education);
     let myEducation = data.value.map(info => info.Subject);
     let myClassTime = data.value.map(info => info.StartDate);
     let myClass = data.value.map(info => info.Room);
 
-    createScheduleView(myTeam, myClass, myClassTime, myEducation);
+    createScheduleView(myTeam, myClass, myClassTime, myEducation, myClassType);
 }
 
-function createScheduleView(myTeam, myClass, myClassTime, myEducation) {
+function createScheduleView(myTeam, myClass, myClassTime, myEducation, myClassType) {
     const ScheduleSection = document.getElementById('schedule');
 
     // Get the current time
@@ -94,6 +95,7 @@ function createScheduleView(myTeam, myClass, myClassTime, myEducation) {
     // Combine data into objects for easier sorting
     const classes = myTeam.map((team, index) => ({
         team: team,
+        classType: myClassType[index],
         class: myClass[index],
         time: new Date(myClassTime[index]),
         education: myEducation[index]
@@ -133,6 +135,8 @@ function createScheduleView(myTeam, myClass, myClassTime, myEducation) {
 
                 const ClassBox = document.createElement('section');
                 ClassBox.className = 'ClassBox';
+                const ClassType = document.createElement('p');
+                ClassType.className = 'ClassType';
                 const ClassTime = document.createElement('p');
                 ClassTime.className = 'ClassTime';
                 const Team = document.createElement('p');
@@ -143,16 +147,20 @@ function createScheduleView(myTeam, myClass, myClassTime, myEducation) {
                 Class.className = 'Class';
 
                 const TimeTextNode = document.createTextNode(`${stringHours}:${stringMinutes}`);
+                const ClassTypeTextNode = document.createTextNode(cls.classType);
                 const TeamTextNode = document.createTextNode(team);
                 const ClassTextNode = document.createTextNode(className);
                 const SubjectTextNode = document.createTextNode(education);
 
                 ClassTime.appendChild(TimeTextNode);
+                ClassType.appendChild(ClassTypeTextNode);
                 Team.appendChild(TeamTextNode);
                 Subject.appendChild(SubjectTextNode);
                 Class.appendChild(ClassTextNode);
 
+
                 ClassBox.appendChild(ClassTime);
+                ClassBox.appendChild(ClassType);
                 ClassBox.appendChild(Team);
                 ClassBox.appendChild(Subject);
                 ClassBox.appendChild(Class);

@@ -39,13 +39,14 @@ function getDate() {
     let currentTime = new Date();
     let hours = currentTime.getHours();
     let minutes = currentTime.getMinutes();
-    let colon = ":";
 
-    if (minutes < 10) {
-        minutes = "0" + minutes;
-    }
+    // Hent referencer til HTML-elementer
+    let hoursElement = document.getElementById("hours");
+    let minutesElement = document.getElementById("minutes");
+    let colonElement = document.getElementById("colon");
 
-    myClock.innerText = hours + colon + minutes;
+    hoursElement.innerText = hours < 10 ? "0" + hours : hours;
+    minutesElement.innerText = minutes < 10 ? "0" + minutes : minutes;
 
     let day = currentTime.toLocaleString("da-DK", { weekday: "long" }); // Få ugedagen som tekst på dansk
     day = day.charAt(0).toUpperCase() + day.slice(1); //uppercase første bogstav

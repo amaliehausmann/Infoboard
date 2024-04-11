@@ -56,9 +56,9 @@ body {
 } 
 
 #wrapper {
-  grid-column-gap: 1rem;
+  /* grid-column-gap: 1rem; */
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 2fr 3fr;
   flex-direction: row;
   background-color: #090a29b3;
 }
@@ -80,7 +80,7 @@ body {
 
 #schedule {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  margin-left: 60px;
+  margin-left: 30px;
 }
 
 .ClassBox {
@@ -93,9 +93,7 @@ body {
 .ClassBox:nth-child(1n + 1) .ClassTime:nth-child(1n + 1) {
   background-color: #08346c;
 }
-.ClassBox:nth-child(2n + 1) .ClassTime:nth-child(2n + 1) {
-  background-color: #08346c;
-}
+
 .ClassBox:nth-child(2n + 1) .ClassTime:nth-child(2n + 1) {
   background-color: #08346c;
 }
@@ -117,76 +115,102 @@ body {
 .ClassBox:nth-child(8n + 1) .ClassTime:nth-child(8n + 1) {
   background-color: #ff7003;
 }
-.ClassBox:nth-child(1n + 1) .Team:nth-child(1n + 2) {
+.ClassBox:nth-child(1n + 1) .ClassType:nth-child(1n + 2) {
   background-color: #023e8a;
 }
-.ClassBox:nth-child(2n + 1) .Team:nth-child(2n + 2) {
+.ClassBox:nth-child(2n + 1) .ClassType:nth-child(2n + 2) {
   background-color: #023e8a;
 }
-.ClassBox:nth-child(3n + 1) .Team:nth-child(3n + 2) {
+.ClassBox:nth-child(3n + 1) .ClassType:nth-child(3n + 2) {
   background-color: #14746f;
 }
-.ClassBox:nth-child(4n + 1) .Team:nth-child(4n + 2) {
+.ClassBox:nth-child(4n + 1) .ClassType:nth-child(4n + 2) {
   background-color: #14746f;
 }
-.ClassBox:nth-child(5n + 1) .Team:nth-child(5n + 2) {
+.ClassBox:nth-child(5n + 1) .ClassType:nth-child(5n + 2) {
   background-color: #dc1e1e;
 }
-.ClassBox:nth-child(6n + 1) .Team:nth-child(6n + 2) {
+.ClassBox:nth-child(6n + 1) .ClassType:nth-child(6n + 2) {
   background-color: #dc1e1e;
 }
-.ClassBox:nth-child(7n + 1) .Team:nth-child(7n + 2) {
+.ClassBox:nth-child(7n + 1) .ClassType:nth-child(7n + 2) {
   background-color: #ff7b00;
 }
-.ClassBox:nth-child(8n + 1) .Team:nth-child(8n + 2) {
+.ClassBox:nth-child(8n + 1) .ClassType:nth-child(8n + 2) {
   background-color: #ff7b00;
 }
-.ClassBox:nth-child(1n + 1) .Subject:nth-child(1n + 3) {
+.ClassBox:nth-child(1n + 1) .Team:nth-child(1n + 3) {
   background-color: #023e8a;
 }
-.ClassBox:nth-child(2n + 1) .Subject:nth-child(2n + 3) {
+.ClassBox:nth-child(2n + 1) .Team:nth-child(2n + 3) {
   background-color: #023e8a;
 }
-.ClassBox:nth-child(3n + 1) .Subject:nth-child(3n + 3) {
+.ClassBox:nth-child(3n + 1) .Team:nth-child(3n + 3) {
   background-color: #14746f;
 }
-.ClassBox:nth-child(4n + 1) .Subject:nth-child(4n + 3) {
+.ClassBox:nth-child(4n + 1) .Team:nth-child(4n + 3) {
   background-color: #14746f;
 }
-.ClassBox:nth-child(5n + 1) .Subject:nth-child(5n + 3) {
+.ClassBox:nth-child(5n + 1) .Team:nth-child(5n + 3) {
   background-color: #dc1e1e;
 }
-.ClassBox:nth-child(6n + 1) .Subject:nth-child(6n + 3) {
+.ClassBox:nth-child(6n + 1) .Team:nth-child(6n + 3) {
   background-color: #dc1e1e;
 }
-.ClassBox:nth-child(7n + 1) .Subject:nth-child(7n + 3) {
+.ClassBox:nth-child(7n + 1) .Team:nth-child(7n + 3) {
   background-color: #ff7b00;
 }
-.ClassBox:nth-child(8n + 1) .Subject:nth-child(8n + 3) {
+.ClassBox:nth-child(8n + 1) .Team:nth-child(8n + 3) {
   background-color: #ff7b00;
 }
-.ClassBox:nth-child(1n + 1) .Class:nth-child(1n + 4) {
+
+.ClassBox:nth-child(1n + 1) .Subject:nth-child(1n + 4) {
+  background-color: #023e8a;
+}
+.ClassBox:nth-child(2n + 1) .Subject:nth-child(2n + 4) {
+  background-color: #023e8a;
+}
+.ClassBox:nth-child(3n + 1) .Subject:nth-child(3n + 4) {
+  background-color: #14746f;
+}
+.ClassBox:nth-child(4n + 1) .Subject:nth-child(4n + 4) {
+  background-color: #14746f;
+}
+.ClassBox:nth-child(5n + 1) .Subject:nth-child(5n + 4) {
+  background-color: #dc1e1e;
+}
+.ClassBox:nth-child(6n + 1) .Subject:nth-child(6n + 4) {
+  background-color: #dc1e1e;
+}
+.ClassBox:nth-child(7n + 1) .Subject:nth-child(7n + 4) {
+  background-color: #ff7b00;
+}
+.ClassBox:nth-child(8n + 1) .Subject:nth-child(8n + 4) {
+  background-color: #ff7b00;
+}
+
+.ClassBox:nth-child(1n + 1) .Class:nth-child(1n + 5) {
   background-color: #0077b6;
 }
-.ClassBox:nth-child(2n + 1) .Class:nth-child(2n + 4) {
+.ClassBox:nth-child(2n + 1) .Class:nth-child(2n + 5) {
   background-color: #0077b6;
 }
-.ClassBox:nth-child(3n + 1) .Class:nth-child(3n + 4) {
+.ClassBox:nth-child(3n + 1) .Class:nth-child(3n + 5) {
   background-color: #248277;
 }
-.ClassBox:nth-child(4n + 1) .Class:nth-child(4n + 4) {
+.ClassBox:nth-child(4n + 1) .Class:nth-child(4n + 5) {
   background-color: #248277;
 }
-.ClassBox:nth-child(5n + 1) .Class:nth-child(5n + 4) {
+.ClassBox:nth-child(5n + 1) .Class:nth-child(5n + 5) {
   background-color: #ff5151;
 }
-.ClassBox:nth-child(6n + 1) .Class:nth-child(6n + 4) {
+.ClassBox:nth-child(6n + 1) .Class:nth-child(6n + 5) {
   background-color: #ff5151;
 }
-.ClassBox:nth-child(7n + 1) .Class:nth-child(7n + 4) {
+.ClassBox:nth-child(7n + 1) .Class:nth-child(7n + 5) {
   background-color: #ff9500;
 }
-.ClassBox:nth-child(8n + 1) .Class:nth-child(8n + 4) {
+.ClassBox:nth-child(8n + 1) .Class:nth-child(8n + 5) {
   background-color: #ff9500;
 }
 .ClassBox:nth-child(9n + 1) .ClassTime:nth-child(9n + 1) {
@@ -213,76 +237,100 @@ body {
 .ClassBox:nth-child(16n + 1) .ClassTime:nth-child(16n + 1) {
   background-color: #ff7003;
 }
-.ClassBox:nth-child(9n + 1) .Team:nth-child(9n + 2) {
+.ClassBox:nth-child(9n + 1) .ClassType:nth-child(9n + 2) {
   background-color: #023e8a;
 }
-.ClassBox:nth-child(10n + 1) .Team:nth-child(10n + 2) {
+.ClassBox:nth-child(10n + 1) .ClassType:nth-child(10n + 2) {
   background-color: #023e8a;
 }
-.ClassBox:nth-child(11n + 1) .Team:nth-child(11n + 2) {
+.ClassBox:nth-child(11n + 1) .ClassType:nth-child(11n + 2) {
   background-color: #14746f;
 }
-.ClassBox:nth-child(12n + 1) .Team:nth-child(12n + 2) {
+.ClassBox:nth-child(12n + 1) .ClassType:nth-child(12n + 2) {
   background-color: #14746f;
 }
-.ClassBox:nth-child(13n + 1) .Team:nth-child(13n + 2) {
+.ClassBox:nth-child(13n + 1) .ClassType:nth-child(13n + 2) {
   background-color: #dc1e1e;
 }
-.ClassBox:nth-child(14n + 1) .Team:nth-child(14n + 2) {
+.ClassBox:nth-child(14n + 1) .ClassType:nth-child(14n + 2) {
   background-color: #dc1e1e;
 }
-.ClassBox:nth-child(15n + 1) .Team:nth-child(15n + 2) {
+.ClassBox:nth-child(15n + 1) .ClassType:nth-child(15n + 2) {
   background-color: #ff7b00;
 }
-.ClassBox:nth-child(16n + 1) .Team:nth-child(16n + 2) {
+.ClassBox:nth-child(16n + 1) .ClassType:nth-child(16n + 2) {
   background-color: #ff7b00;
 }
-.ClassBox:nth-child(9n + 1) .Subject:nth-child(9n + 3) {
+.ClassBox:nth-child(9n + 1) .Team:nth-child(9n + 3) {
   background-color: #023e8a;
 }
-.ClassBox:nth-child(10n + 1) .Subject:nth-child(10n + 3) {
+.ClassBox:nth-child(10n + 1) .Team:nth-child(10n + 3) {
   background-color: #023e8a;
 }
-.ClassBox:nth-child(11n + 1) .Subject:nth-child(11n + 3) {
+.ClassBox:nth-child(11n + 1) .Team:nth-child(11n + 3) {
   background-color: #14746f;
 }
-.ClassBox:nth-child(12n + 1) .Subject:nth-child(12n + 3) {
+.ClassBox:nth-child(12n + 1) .Team:nth-child(12n + 3) {
   background-color: #14746f;
 }
-.ClassBox:nth-child(13n + 1) .Subject:nth-child(13n + 3) {
+.ClassBox:nth-child(13n + 1) .Team:nth-child(13n + 3) {
   background-color: #dc1e1e;
 }
-.ClassBox:nth-child(14n + 1) .Subject:nth-child(14n + 3) {
+.ClassBox:nth-child(14n + 1) .Team:nth-child(14n + 3) {
   background-color: #dc1e1e;
 }
-.ClassBox:nth-child(15n + 1) .Subject:nth-child(15n + 3) {
+.ClassBox:nth-child(15n + 1) .Team:nth-child(15n + 3) {
   background-color: #ff7b00;
 }
-.ClassBox:nth-child(16n + 1) .Subject:nth-child(16n + 3) {
+.ClassBox:nth-child(16n + 1) .Team:nth-child(16n + 3) {
   background-color: #ff7b00;
 }
-.ClassBox:nth-child(9n + 1) .Class:nth-child(9n + 4) {
+.ClassBox:nth-child(9n + 1) .Subject:nth-child(9n + 4) {
+  background-color: #023e8a;
+}
+.ClassBox:nth-child(10n + 1) .Subject:nth-child(11n + 4) {
+  background-color: #023e8a;
+}
+.ClassBox:nth-child(11n + 1) .Subject:nth-child(11n + 4) {
+  background-color: #14746f;
+}
+.ClassBox:nth-child(12n + 1) .Subject:nth-child(12n + 4) {
+  background-color: #14746f;
+}
+.ClassBox:nth-child(13n + 1) .Subject:nth-child(13n + 4) {
+  background-color: #dc1e1e;
+}
+.ClassBox:nth-child(14n + 1) .Subject:nth-child(14n + 4) {
+  background-color: #dc1e1e;
+}
+.ClassBox:nth-child(15n + 1) .Subject:nth-child(15n + 4) {
+  background-color: #ff7b00;
+}
+.ClassBox:nth-child(16n + 1) .Subject:nth-child(16n + 4) {
+  background-color: #ff7b00;
+}
+.ClassBox:nth-child(9n + 1) .Class:nth-child(9n + 5) {
   background-color: #0077b6;
 }
-.ClassBox:nth-child(10n + 1) .Class:nth-child(10n + 4) {
+.ClassBox:nth-child(10n + 1) .Class:nth-child(10n + 5) {
   background-color: #0077b6;
 }
-.ClassBox:nth-child(11n + 1) .Class:nth-child(11n + 4) {
+.ClassBox:nth-child(11n + 1) .Class:nth-child(11n + 5) {
   background-color: #248277;
 }
-.ClassBox:nth-child(12n + 1) .Class:nth-child(12n + 4) {
+.ClassBox:nth-child(12n + 1) .Class:nth-child(12n + 5) {
   background-color: #248277;
 }
-.ClassBox:nth-child(13n + 1) .Class:nth-child(13n + 4) {
+.ClassBox:nth-child(13n + 1) .Class:nth-child(13n + 5) {
   background-color: #ff5151;
 }
-.ClassBox:nth-child(14n + 1) .Class:nth-child(14n + 4) {
+.ClassBox:nth-child(14n + 1) .Class:nth-child(14n + 5) {
   background-color: #ff5151;
 }
-.ClassBox:nth-child(15n + 1) .Class:nth-child(15n + 4) {
+.ClassBox:nth-child(15n + 1) .Class:nth-child(15n + 5) {
   background-color: #ff9500;
 }
-.ClassBox:nth-child(16n + 1) .Class:nth-child(16n + 4) {
+.ClassBox:nth-child(16n + 1) .Class:nth-child(16n + 5) {
   background-color: #ff9500;
 }
 
@@ -297,8 +345,7 @@ body {
 .Team {
   border-radius: 999px;
   margin-right: -14px;
-  padding-left: 40px;
-  margin-left: 40px;
+  padding-left: 1.5vw;
   padding-bottom: 7.5px;
   padding-top: 7.5px;
   width: 150px;
@@ -321,12 +368,23 @@ body {
   border-radius: 999px;
   position: absolute;
   z-index: 8;
-  margin-left: 375px;
+  margin-left: 520px;
   padding-top: 7.5px;
   padding-bottom: 7.5px;
   width: 75px;
   padding-left: 40px;
   text-align: center;
+}
+
+.ClassType {
+  background-color: #023e8a;
+  width: 150px;
+  border-radius: 999px;
+  margin-left: 40px;
+  padding-left: 50px;
+  padding-top: 7.5px;
+  padding-bottom: 7.5px;
+  margin-right: -35px;
 }
 
 #right {
@@ -337,7 +395,7 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  gap: 43px 100px;
+  gap: 43px 70px;
 }
 
 /* NEWS SECTION */
@@ -391,7 +449,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center;align-items: center;
 }
 
 #weatherAndTime * {
@@ -408,10 +466,16 @@ body {
 }
 
 #clock {
+  margin: 0;
   margin-top: -5px;
   font-weight: 500;
   font-size: 80px;
   margin-bottom: 70px;
+}
+
+#clock span{
+  margin: 0;
+  padding: 0;
 }
 
 .weatherIcon {
