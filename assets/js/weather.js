@@ -59,7 +59,8 @@ function getDate() {
 function translateWeatherDescription(description) {
     switch (description) {
         case "drizzle", "light intensity drizzle", "heavy intensity drizzle", "light intensity drizzle rain", "drizzle rain", "	heavy intensity drizzle rain", "shower rain and drizzle", "heavy shower rain and drizzle", "shower drizzle":
-            return "Støvregn";
+            return "støvregn", "let intensitetsstøvregn", "tungt intensitetsstøvregn", "let intensitetsstøvregn", "støvregn", "streg intensitetsstøvregn", "bygeregn og støvregn", "kraftig bygeregn og småregn", "bygeregn";
+        case
         case "thunderstorm", "thunderstorm with light rain", "thunderstorm with rain", "thunderstorm with heavy rain", "light thunderstorm", "heavy thunderstorm", "ragged thunderstorm", "thunderstorm with light drizzle", "thunderstorm with drizzle", "thunderstorm with heavy drizzle":
             return "Tordenvejr";
         case "light rain", "moderate rain", "heavy intensity rain", "very heavy rain", "extreme rain":
