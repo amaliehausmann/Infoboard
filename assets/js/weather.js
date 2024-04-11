@@ -76,15 +76,14 @@ function translateWeatherDescription(description) {
             return "Bygeregn og støvregn";
         case "heavy intensity drizzle rain":
             return "Tungt støvregn";
-
         case "thunderstorm":
             return "Tordenvejr";
         case "thunderstorm with light rain":
-            return "Tordenvejr med let regn";
+            return "Tordenvejr med regn";
         case "thunderstorm with rain":
             return "Tordenvejr med regn";
         case "thunderstorm with heavy rain":
-            return "Tordenvejr med kraftig regn";
+            return "Tordenvejr med regn";
         case "light thunderstorm":
             return "Let tordenvejr";
         case "heavy thunderstorm":
@@ -92,19 +91,66 @@ function translateWeatherDescription(description) {
         case "ragged thunderstorm":
             return "Tordenvejr";
         case "thunderstorm with light drizzle":
-            return "Tordenvejr med let støvregn";
+            return "Tordenvejr med regn";
         case "thunderstorm with drizzle":
-            return "Tordenvejr med støvregn";
+            return "Tordenvejr med regn";
         case "thunderstorm with heavy drizzle":
-            return "Tordenvejr med kraftig støvregn";
-            
-        case "light rain", "moderate rain", "heavy intensity rain", "very heavy rain", "extreme rain":
+            return "Tordenvejr med regn";
+        case "light rain":
             return "Regnvejr";
-        case "shower rain", "light intensity shower rain", "heavy intensity shower rain", "ragged shower rain":
+        case "moderate rain":
+            return "Regnvejr";
+        case "heavy intensity rain":
+            return "Regnvejr";
+        case "very heavy rain":
+            return "Regnvejr";
+        case "extreme rain":
+            return "Regnvejr";
+        case "shower rain":
             return "Byger";
-        case "snow", "light snow", "heavy snow", "sleet", "light shower sleet", "shower sleet", "light rain and snow", "rain and snow", "light shower snow", "shower snow", "heavy shower snow":
+        case "light intensity shower rain":
+            return "Byger";
+        case "heavy intensity shower rain":
+            return "Byger";
+        case "ragged shower rain":
+            return "Byger";
+        case "snow":
             return "Snevejr";
-        case "mist", "smoke", "haze", "sand/dust whirls", "fog", "sand", "dust", "squalls":
+        case "light snow":
+            return "Snevejr";
+        case "heavy snow":
+            return "Snevejr";
+        case "sleet":
+            return "Snevejr";
+        case "light shower sleet":
+            return "Snevejr";
+        case "shower sleet":
+            return "Snevejr";
+        case "light rain and snow":
+            return "Snevejr";
+        case "rain and snow":
+            return "Snevejr";
+        case "light shower snow":
+            return "Snevejr";
+        case "shower snow":
+            return "Snevejr";
+        case "heavy shower snow":
+            return "Snevejr";
+        case "mist":
+            return "Tåge";
+        case "smoke":
+            return "Tåge";
+        case "haze":
+            return "Tåge";
+        case "sand/dust whirls":
+            return "Tåge";
+        case "fog":
+            return "Tåge";
+        case "sand":
+            return "Tåge";
+        case "dust":
+            return "Tåge";
+        case "squalls":
             return "Tåge";
         case "clear sky":
             return "Klar himmel";
