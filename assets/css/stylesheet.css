@@ -197,10 +197,10 @@ body {
   background-color: #2066c9;
 }
 .ClassBox:nth-child(3n + 1) .Class:nth-child(3n + 5) {
-  background-color: #248277;
+  background-color: #2ea295;
 }
 .ClassBox:nth-child(4n + 1) .Class:nth-child(4n + 5) {
-  background-color: #248277;
+  background-color: #2ea295;
 }
 .ClassBox:nth-child(5n + 1) .Class:nth-child(5n + 5) {
   background-color: #ff5151;
@@ -209,10 +209,10 @@ body {
   background-color: #ff5151;
 }
 .ClassBox:nth-child(7n + 1) .Class:nth-child(7n + 5) {
-  background-color: #ff9500;
+  background-color: #fb9d19;
 }
 .ClassBox:nth-child(8n + 1) .Class:nth-child(8n + 5) {
-  background-color: #ff9500;
+  background-color: #fb9d19;
 }
 .ClassBox:nth-child(9n + 1) .ClassTime:nth-child(9n + 1) {
   background-color: #08346c;
@@ -317,10 +317,10 @@ body {
   background-color: #2066c9;
 }
 .ClassBox:nth-child(11n + 1) .Class:nth-child(11n + 5) {
-  background-color: #248277;
+  background-color: #2ea295;
 }
 .ClassBox:nth-child(12n + 1) .Class:nth-child(12n + 5) {
-  background-color: #248277;
+  background-color: #2ea295;
 }
 .ClassBox:nth-child(13n + 1) .Class:nth-child(13n + 5) {
   background-color: #ff5151;
@@ -329,10 +329,10 @@ body {
   background-color: #ff5151;
 }
 .ClassBox:nth-child(15n + 1) .Class:nth-child(15n + 5) {
-  background-color: #ff9500;
+  background-color: #fb9d19;
 }
 .ClassBox:nth-child(16n + 1) .Class:nth-child(16n + 5) {
-  background-color: #ff9500;
+  background-color: #fb9d19;
 }
 
 .ClassTime {
@@ -374,7 +374,7 @@ body {
   padding-bottom: 7.5px;
   width: 75px;
   padding-left: 40px;
-  text-align: center;
+  text-align: right;
 }
 
 .ClassType {
@@ -468,11 +468,13 @@ body {
 
 #clock {
   margin: 0;
-  margin-top: -1vh;
   font-weight: 500;
   font-size: 80px;
   margin-bottom: 80px;
   margin-right: 50px;
+}
+
+#clock:nth-child(even){
   letter-spacing: -5px;
 }
 
@@ -627,10 +629,10 @@ body {
 }
 
 .busPlan:nth-child(odd) .timestamp:nth-child(odd) {
-  background-color: #248277;
+  background-color: #2ea295;
 }
 .busPlan:nth-child(even) .timestamp:nth-child(odd) {
-  background-color: #ff9500;
+  background-color: #fb9d19;
 }
 
 .line {

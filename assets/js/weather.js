@@ -43,7 +43,6 @@ function getDate() {
     // Hent referencer til HTML-elementer
     let hoursElement = document.getElementById("hours");
     let minutesElement = document.getElementById("minutes");
-    let colonElement = document.getElementById("colon");
 
     hoursElement.innerText = hours < 10 ? "0" + hours : hours;
     minutesElement.innerText = minutes < 10 ? "0" + minutes : minutes;
