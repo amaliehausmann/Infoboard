@@ -61,24 +61,43 @@ function translateWeatherDescription(description) {
         case "drizzle":
             return "Støvregn";
         case "light intensity drizzle":
-            return "Let intensitetsstøvregn";
+            return "Let støvregn";
         case "heavy intensity drizzle":
-            return "Tungt intensitetsstøvregn"; 
+            return "Tungt støvregn";
         case "light intensity drizzle rain":
-            return "Let intensitetsstøvregn";
+            return "Let støvregn";
         case "drizzle rain":
             return "Støvregn";
         case "shower drizzle":
             return "bygeregn";
         case "heavy shower rain and drizzle":
-            return "Kraftig bygeregn og småregn";
+            return "Kraftig byge og støvregn";
         case "shower rain and drizzle":
             return "Bygeregn og støvregn";
         case "heavy intensity drizzle rain":
-            return "Streg intensitetsstøvregn";
+            return "Tungt støvregn";
 
-        case "thunderstorm", "thunderstorm with light rain", "thunderstorm with rain", "thunderstorm with heavy rain", "light thunderstorm", "heavy thunderstorm", "ragged thunderstorm", "thunderstorm with light drizzle", "thunderstorm with drizzle", "thunderstorm with heavy drizzle":
+        case "thunderstorm":
             return "Tordenvejr";
+        case "thunderstorm with light rain":
+            return "Tordenvejr med let regn";
+        case "thunderstorm with rain":
+            return "Tordenvejr med regn";
+        case "thunderstorm with heavy rain":
+            return "Tordenvejr med kraftig regn";
+        case "light thunderstorm":
+            return "Let tordenvejr";
+        case "heavy thunderstorm":
+            return "Kraftigt tordenvejr";
+        case "ragged thunderstorm":
+            return "Tordenvejr";
+        case "thunderstorm with light drizzle":
+            return "Tordenvejr med let støvregn";
+        case "thunderstorm with drizzle":
+            return "Tordenvejr med støvregn";
+        case "thunderstorm with heavy drizzle":
+            return "Tordenvejr med kraftig støvregn";
+            
         case "light rain", "moderate rain", "heavy intensity rain", "very heavy rain", "extreme rain":
             return "Regnvejr";
         case "shower rain", "light intensity shower rain", "heavy intensity shower rain", "ragged shower rain":

@@ -73,6 +73,7 @@ body {
   filter: drop-shadow(12px 3px 5px #00000050);
 }
 
+
 #left header {
   font-size: 30px;
   margin-bottom: -40px;
@@ -471,11 +472,40 @@ body {
   font-weight: 500;
   font-size: 80px;
   margin-bottom: 70px;
+  margin-right: 50px;
+  letter-spacing: -5px;
 }
 
 #clock span{
   margin: 0;
   padding: 0;
+  font-weight: 500;
+}
+
+#colon{
+  animation: blinkWatch 2s ease-in-out infinite;
+}
+
+@keyframes blinkWatch {
+  0%{
+    opacity: 0;
+  }
+  19%{
+    opacity: 0%;
+  }
+  20%{
+    opacity: 100%;
+  }
+  80%{
+    opacity: 100%;
+  }
+  81%{
+    opacity: 0%;
+  }
+  100%{
+    opacity: 0%;
+  }
+
 }
 
 .weatherIcon {
@@ -484,19 +514,22 @@ body {
 
 #weatherAndTime img {
   margin: -60px;
-  margin-right: 0;
+  margin-right: -10px;
   animation: floatAnimation 3s ease-in-out infinite;
 }
 
 #description {
+  margin: 0;
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 25px;
   margin-top: 60px;
+  margin-right: 50px;
 }
 #temperature {
   margin-bottom: -50px;
   font-size: 20px;
+  margin-right: 40px;
 }
 
 /* FOOD SECTION */
